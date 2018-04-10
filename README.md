@@ -7,3 +7,6 @@ Hodge podge of coding snippets that I didn't know before and have proved useful.
 ```
 brew install -v packagename
 ```
+#### How to change the remote url for a repo
+**WHy:** I jump between org repos so sometimes I need to push as a different user and not as myself. To do this, I clone repos using HTTP because it prompts me for username and password - what I want. Other times, I need to push as myself for my own repos and I should be able to authenticate with my own username and password when I push but I use 2FA so that won't work. This forces me to change the remote URL for the repo to SSH so I can be prompted for my key instead.
+Link here: [https://help.github.com/articles/changing-a-remote-s-url/](https://help.github.com/articles/changing-a-remote-s-url/)
