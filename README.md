@@ -16,3 +16,12 @@ Link here: [https://help.github.com/articles/changing-a-remote-s-url/](https://h
 **Why:** Because I needed to hide the API key for my threeinthree web app but still be able to push the app to heroku and have it work successfully. 
 
 Link here: [http://www.blacktechdiva.com/hide-api-keys/](http://www.blacktechdiva.com/hide-api-keys/)
+
+#### pip install for virtualenv when you have spaces in your file path
+**Why**: The person who built my laptop (it was free) created my profile using a space between my first and last name. AGHHH!!! I know you're not supposed to do that but if you have never developed an application and had to redo the entire thing because you used a space instead of a -, then you wouldn't know not to do this.
+
+If this happens to you, you can go into ```bin/pip``` files and change the file path to add backslashes where there's a space but that didn't work for me. This did:
+
+```
+python -m pip install packagename
+```
