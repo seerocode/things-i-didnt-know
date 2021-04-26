@@ -25,3 +25,11 @@ If this happens to you, you can go into ```bin/pip``` files and change the file 
 ```
 python -m pip install packagename
 ```
+#### How do I get changed filed from another branch without affecting my current branch? (DO NOT merge commit messages)
+I was working on a branch that got too big. I split the work into two branches (client and database changes) but I still need the changes on the current branch I was working on to continue development. However, I didn't want to commit the work from the split branch, just bring in those files as unstaged files.
+
+The easiest way to do this is on your current branch is with:
+```
+git merge split-branch-name
+git reset HEAD~1
+```
